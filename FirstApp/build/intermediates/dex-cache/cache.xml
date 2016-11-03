@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="71a069c6958ee680d858640da5284a15d881fdb4">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_dfcd8ca0aba1cba0ce81b9299c7489a26dba1a2a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.0_3884dc60f8b136600effba7f11e92298f3631800\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_e87f1667aa90079a78bf408a1f3b52a2646534e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.0\support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.0_a92d8d0a7d2cf62090d5490acc272b31fdfe890e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="103a860094f243468e62f9353cbf7e3859cc2501">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_5f51822461f55098c5fc75d42a4523722cd75ae1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_898a92d11a4a32fb6e4527f07d325e41a3044a67\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.0_77901aa8dca78b05a559829b7da699369693cee5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_d63589f07899edded094330a9a5dd6485358850a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_006aa852c7fad61d6b17e592e587d70a8af5f263\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\libs\internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.0_2da1d701c8368fcac13e0aec937e45ae13a5afcc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.0_5f11da7edcce82df44f410ff0d02a05934f20050\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.0_f98b848ea55eb93ebcc5344acbba26f90d5ac9d4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.0_e4766dbfc720aafd3bf20e806afd8b7098118633\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.0_3349bcd42be1fcfe86422c88d69c9b55e8117abc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.0_bfb2dcaae16a225c1b5705bb074b9cf9eccdddaf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.0_c9ea9356380dcb422268f77470cc3a41879c9221\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="C:\Users\Le Huy Duc\AndroidStudioProjects\FirstApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.0_5414cc849b9eb20cc515977199a9149605a42b1e\classes.dex" />
+    </item>
+
+</items>
