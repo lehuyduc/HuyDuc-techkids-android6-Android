@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="hello_android">Hello Android!</string>
+    <string name="say_hello">Say Hello</string>
+    <string name="ibm_calculator">IBM Calculator</string>
+    <string name="calculate">Calculate</string>
+</resources>
