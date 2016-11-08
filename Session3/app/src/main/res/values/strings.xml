@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Session3</string>
+    <string name="go_to_second_activity">Go to second activity</string>
+    <string name="second_activity">Second activity</string>
+    <string name="go_to_activity_3">Go to activity 3</string>
+    <string name="third_activity">Third activity</string>
+    <string name="finished">Finished</string>
+    <string name="not_touching">Not touching</string>
+    <string name="tap_here">Tap here</string>
+    <string name="number_of_taps">Number of taps</string>
+    <string name="tap_me">Tap me</string>
+    <string name="oncreate">onCreate</string>
+    <string name="onstart">onStart</string>
+    <string name="onrestart">onRestart</string>
+    <string name="onresume">onResume</string>
+    <string name="onpause">onPause</string>
+    <string name="onstop">onStop</string>
+    <string name="ondestroy">onDestroy</string>
+    <string name="start_timer">Start timer</string>
+    <string name="minute">Minute</string>
+    <string name="second">Second</string>
+    <string name="stop_timer">Stop timer</string>
+</resources>

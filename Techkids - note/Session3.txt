@@ -1,0 +1,8 @@
+Bundle: file to save stuffs. Contain two parts (like map):
+	+ Key: in String. "key1", "key2", ...
+	+ Value: 
+protected onSaveInstanceState:
+
+
+- Rotate screen: Android destroy activity and create a new one 
+horizontally.

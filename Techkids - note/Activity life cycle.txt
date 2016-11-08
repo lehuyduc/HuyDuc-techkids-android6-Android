@@ -1,0 +1,7 @@
+Activity co cac trang thai:
+- exist ? onCreate - onDestroy
+- visible ? onStart - onStop
+- active (can be interacted) ? onResume - onPause
+
+
+
