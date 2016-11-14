@@ -1,0 +1,26 @@
+- Step to create fragments:
+	+ Create fragments and pass arguments
+	+ Get FragmentManager:
+		FragmentManager fManager = getSupportFragmentManager();
+	
+	+ Start replacing:
+		FragmentTransaction x = fragmentManager.beginTransaction()
+		-> everything is used on fragmentTransaction
+
+	+ Replace:
+		fragmentTransaction.replace(frame_layout,detailFragment);
+	
+	+ 6(optional):
+		fragmentTransaction.addToBackStack(null);
+		-> press back to go back to previous state of fragment 
+		until no fragment is available. Blank fragment is the
+		first state
+		
+	
+	+ 7: fragmentTransaction.commit();
+
+
+- studentArrayAdapter.notifyDataSetChanged();
+
+
+- Serializable copy object by value only, not reference

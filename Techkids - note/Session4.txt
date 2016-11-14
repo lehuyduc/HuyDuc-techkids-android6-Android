@@ -1,0 +1,12 @@
+- Linear layout: 
+	+ oritentation: vertical / horizontal
+
+- Master detail:
+	+ Many activity in one screen
+
+- Fragment: an activity, a piece of layout
+
+- Framelayout: frame to pant fragment on
+
+- Use a Framelayout to cover an activity completely and paint
+fragment on it

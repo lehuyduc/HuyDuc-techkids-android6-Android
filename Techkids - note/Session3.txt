@@ -6,3 +6,6 @@ protected onSaveInstanceState:
 
 - Rotate screen: Android destroy activity and create a new one 
 horizontally.
+
+
+- Manifest can choose whether an activity takes up entire screen or not.
