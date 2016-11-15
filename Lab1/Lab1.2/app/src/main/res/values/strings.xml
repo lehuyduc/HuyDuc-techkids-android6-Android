@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab1.2</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="night_dress_navailable_in_many_colors">Night dress\nAvailable in many colors</string>
+    <string name="available_within_2_4_business_days_express_delivery_available">Available within 2-4 business days Express-Delivery available</string>
+    <string name="details_n_various_leather_applications_and_patches_n_rib_knit_cuffs_and_hem_contains_non_textile_parts_of_animal_origin_length_medium">Details\n - Various leather applications and patches.\n - Rib knit cuffs and hem.\n - Contains non-textile parts of animal origin.\n - Length: medium</string>
+    <string name="choose_color_and_size">Choose color and size</string>
+</resources>

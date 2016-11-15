@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab0</string>
+    <string name="thrusday_july_14">THRUSDAY, JULY 14</string>
+    <string name="for_you">For You</string>
+    <string name="recently_played">Recently Played</string>
+    <string name="men">Men</string>
+    <string name="girl">Girl</string>
+    <string name="kid">Kid</string>
+</resources>
