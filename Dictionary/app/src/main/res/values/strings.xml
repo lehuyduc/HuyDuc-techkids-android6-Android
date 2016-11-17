@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dictionary</string>
+    <string name="my_dictionary">My dictionary!</string>
+    <string name="type_your_word_here">Type your word here</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="find_my_favorite_words">Find my favorite words</string>
+</resources>

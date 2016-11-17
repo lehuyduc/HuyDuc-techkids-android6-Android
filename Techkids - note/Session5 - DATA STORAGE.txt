@@ -1,0 +1,49 @@
+- DATA STORAGE:
+	- Shared preference: Image, sound, cookies, username, ...
+		-> Unstructured data. Not linked together
+	- Database: structured data
+
+- In database:
+	+ A Class is called a talbe
+	+ An Instance is called a row/record
+	+ An Attribute is called a column/field
+
+
+- WRITE CHANGES AFTER DOING ANYTHING
+
+
+- Date format:
+	+ YYYY-MM-DD
+
+
+- Database CRUD commands:
+	+ CREATE, READ, UPDATE, DELETE
+ 
+
+******************************************************
+- Java: Application and Activity extend Context
+- By standard, application doesn't have java file -> = null
+
+- ContentValues is like Bundle.
+	contentValues.put("title",note.getTitile());
+	
+	id = (int)db.insert(title,null,contentValues);
+
+
+******************************************************
+******* 	DbHelper	**********************
+
+- Get random note by ID:
+   String[] columns = new String[] {NOTE_ID_COLUMN,NOTE_TITLE_COLUMN,
+NOTE_CONTENT_COLUMN,NOTE_DATE_CREATED_COLUMN};
+   String[] args = new String[] {String.valueOf(id)};
+
+   Cursor cursor = db.query(NOTE_TABLE_NAME,columns,NOTE_ID_COLUMN + "=?",
+				args,null,null,null);
+   if (cursor!=null) cursor.moveToFirst();
+
+
+   columns = columns to be read by cursor
+   args = arguments used to find the note
+   "=?" is equal to %s.  "=?=?=?" means that there are 3 elements in
+   	args, and each element match columns

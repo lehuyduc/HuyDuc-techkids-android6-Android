@@ -24,3 +24,9 @@
 
 
 - Serializable copy object by value only, not reference
+
+
+- Fragments do not have findViewById.
+	Create a view first, draw everything on that view.
+	Find views on that view.
+	return that view;

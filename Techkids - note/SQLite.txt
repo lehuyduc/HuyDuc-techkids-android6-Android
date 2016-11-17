@@ -1,0 +1,23 @@
+- SELECT* FROM tbl_note
+	+ SELECT = select a table
+	+ FROM = from that table
+
+
+- INSERT INTO tbl_note VALUES(title,content,date)
+	+ Values must be given in the right order
+
+
+- DELETE FROM tbl_note WHERE date_created = '2015-11-15'
+	
+
+******************************
+	F1 STANDARDS: EVERY INSTANCE MUST HAVE AN ID
+	- ID = PRIMARY KEY = PK
+	- U = Unique. Rows can't have equal UNIQUE columns.
+	- AI = auto increment. i++ every time a new row is added
+	- Not null: force user to give it a value
+
+******************************
+
+- INSERT INTO tbl_note (title,content,date) VALUES('1','2','3')
+	+ () to specify the fields to be insert.
