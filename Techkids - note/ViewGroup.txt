@@ -3,3 +3,5 @@
 - view -> layout_gravity = right
 
 - width = 0 + weight = 1 then layout take 1/n part of the screen
+
+- centerCrop = best

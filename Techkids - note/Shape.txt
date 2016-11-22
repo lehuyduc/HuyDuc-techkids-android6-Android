@@ -1,0 +1,2 @@
+- Circle:
+ http://stackoverflow.com/questions/3185103/how-to-define-a-circle-shape-in-an-android-xml-drawable-file

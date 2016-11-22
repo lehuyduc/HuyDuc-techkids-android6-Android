@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_turn3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lehuyduc.lab21.Turn3Activity">
+
+    <com.example.lehuyduc.lab21.CustomRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.lehuyduc.lab21.CustomRelativeLayout>
+</RelativeLayout>

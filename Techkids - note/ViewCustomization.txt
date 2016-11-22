@@ -1,0 +1,68 @@
+/************************************************/
+     		view group
+/***********************************************/
+
+- private void initFromContext(Context context) {
+        View view = inflate(context, R.layout.player_seekbar, this);
+
+        ButterKnife.bind(this, view);
+
+        updateUI();
+        addListeners();
+    }
+
+
+/************************************************/
+		customized attributes
+/***********************************************/
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="value" format="integer"/>
+    <attr name="label" format="string"/>
+
+    <declare-styleable name="ValueTextView">
+        <attr name="value"/>
+        <attr name="label"/>
+    </declare-styleable>
+
+    <declare-styleable name="FirstLayout">
+        <attr name="value"/>
+        <attr name="label"/>
+    </declare-styleable>
+</resources>
+- declare-styleable name="TimeTextView" to declare which view can use
+this attribute
+	<attr name="" format="integer"> to declare attribute
+
+- AttributeSet is list of attributes that view has.
+  AttributeSet is the lines inside an view in xml file
+	Add customized attributeSet to view to use that attribute
+
+- TypedArray typedArray = context.obtainStyledAttribute(attrs,R.styleable.TimeTextView)
+	 to get attributes
+	+ typedArray is like bundle
+
+- int time = typedArray.getInt(R.styleable.TimeTextView_time, -1);
+		// id, default value
+
+
+- typedArray.recycle() to free memory
+
+
+/********************************************/
+		onMeasure
+
+- widthSize is the real size and is proportional to
+	dp of the device.
+
+- widthSize = MeasureSpec.getSize(widthMeasureSpec);
+  heightSize = widthSize;
+  heightMode = MeasureSpec.EXACTLY;
+  newHeightMeasureSpec = MeasureSpec.makeMeasureSpec(
+				heightSize,heightMode);
+ 
+
+
+/**********************************************/
+- 
