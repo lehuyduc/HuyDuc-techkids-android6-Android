@@ -1,0 +1,112 @@
+	ButterKnife
+compile 'com.jakewharton:butterknife:8.4.0'
+annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+///////////////////////////////////////////////////////////////////
+OkHttp
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.4'
+
+
+    compile 'com.squareup.okhttp3:okhttp:3.4.2'
+
+//*************************************
+	LOAD IMAGE FROM URL
+
+    compile 'com.koushikdutta.ion:ion:2.+'
+
+
+
+
+- Object properties names must be equal to that in database.
+
+- Gson gson = new Gson();
+                gson.fromJson(body, Post.class);
+IF IT IS A SINGLE POST
+		else Post[].class
+
+
+- Main thread = user UI
+- Internet access uses another thread
+- callback = when finished
+- MainActivity.this.runOnUiThread(new Runnable()) to update images 
+	from another thread
+
+
+//****************************
+	SEND GET
+
+    void sendGET() {
+        // Create a client
+        OkHttpClient client = new OkHttpClient();
+
+        // Create a request
+        Request request = new Request.Builder()
+                .url(url)
+                .build();
+
+        // 3 Send request
+        // Sync vs Async (2:)
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                Log.d(TAG,"Internet fail: %s", e);
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String body = response.body().string(); // only once
+                Log.d(TAG, String.format("Response: %s", body));
+
+                Gson gson = new Gson();
+                Post[] posts = gson.fromJson(body, Post[].class);
+                postArrayList.clear();
+                postArrayList.addAll(Arrays.asList(posts));
+
+                // Come back to main thread and update UI
+                MainActivity.this.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        postArrayAdapter.notifyDataSetChanged();
+                    }
+                });
+            }
+        });
+    }
+
+
+//********************
+	POST
+
+- Data is added to bodyy
+
+void sendPOST() {
+        // Create client
+        OkHttpClient client = new OkHttpClient();
+
+        // 2. Create body
+        // 2.1 Media type
+        // 2.2 Data
+
+        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+        Post post = new Post("FROM HDD","Cat is meow");
+        Gson gson = new Gson();
+        String data = gson.toJson(post);
+        RequestBody requestBody = RequestBody.create(JSON, data);
+
+        //3. Create request
+        Request request = new Request.Builder().url(url).post(requestBody).build();
+
+        // 4. Send request
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                Log.d(TAG, String.format("Post onFailure %s", e));
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String body = response.body().string();
+                Log.d(TAG, String.format("Post onResponse: %s ",body));
+            }
+        });
+    }
