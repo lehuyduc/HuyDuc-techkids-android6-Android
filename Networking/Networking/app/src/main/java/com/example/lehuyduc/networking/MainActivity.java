@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 .url(url)
                 .build();
 
-        // 3 Send request
+        // 3 Send requests
         // Sync vs Async (2:)
         client.newCall(request).enqueue(new Callback() {
             @Override
