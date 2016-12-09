@@ -1,0 +1,2 @@
+- Must realm.beginTransaction() and realm.commitTransaction() to do
+any change to database

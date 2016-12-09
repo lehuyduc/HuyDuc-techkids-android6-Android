@@ -1,0 +1,78 @@
+//****************************
+	SEND GET
+
+    void sendGET() {
+        // Create a client
+        OkHttpClient client = new OkHttpClient();
+
+        // Create a request
+        Request request = new Request.Builder()
+                .url(url)
+                .build();
+
+        // 3 Send request
+        // Sync vs Async (2:)
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                Log.d(TAG,"Internet fail: %s", e);
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String body = response.body().string(); // only once
+                Log.d(TAG, String.format("Response: %s", body));
+
+                Gson gson = new Gson();
+                Post[] posts = gson.fromJson(body, Post[].class);
+                postArrayList.clear();
+                postArrayList.addAll(Arrays.asList(posts));
+
+                // Come back to main thread and update UI
+                MainActivity.this.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        postArrayAdapter.notifyDataSetChanged();
+                    }
+                });
+            }
+        });
+    }
+
+
+//********************
+	POST
+
+- Data is added to bodyy
+
+void sendPOST() {
+        // Create client
+        OkHttpClient client = new OkHttpClient();
+
+        // 2. Create body
+        // 2.1 Media type
+        // 2.2 Data
+
+        MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+        Post post = new Post("FROM HDD","Cat is meow");
+        Gson gson = new Gson();
+        String data = gson.toJson(post);
+        RequestBody requestBody = RequestBody.create(JSON, data);
+
+        //3. Create request
+        Request request = new Request.Builder().url(url).post(requestBody).build();
+
+        // 4. Send request
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                Log.d(TAG, String.format("Post onFailure %s", e));
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String body = response.body().string();
+                Log.d(TAG, String.format("Post onResponse: %s ",body));
+            }
+        });
+    }

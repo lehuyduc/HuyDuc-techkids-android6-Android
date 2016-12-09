@@ -1,0 +1,107 @@
+- Link = https://square.github.io/api/myapi
+	+ BaseUrl = https://square.github.io/api
+	+ Services = myapi
+
+- 
+public interface GithubService {
+    @GET("users/{user}/repos")
+    Call<List<Repo>> listRepos(@Path("user") String userName);
+}
+
+-
+public interface RegisterService {
+    @POST("register")
+    Call<RegisterResponseBody> register(@Body RegisterRequestBody body);
+}
+
+
+
+- Retrofit doesn't specify converter to object.
+  Must addConverterFactory.
+
+	Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://api.github.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+- OnResponse mean everything is converted successfully.
+  Failure = either no internet or can't convert
+
+
+- BaseUrl must end with /
+
+
+
+//***************************************************
+		SEND GET
+
+//        Retrofit retrofit = new Retrofit.Builder()
+//                .baseUrl("https://api.github.com/")
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .build();
+//
+//        // 2. Create service
+//        GithubService githubService = retrofit.create(GithubService.class);
+//
+//        // 3. Create call
+//        Call<List<Repo>> call = githubService.listRepos("phuongbk90");
+//
+//        // 4. Request api:
+//        call.enqueue(new Callback<List<Repo>>() {
+//            @Override
+//            public void onResponse(Call<List<Repo>> call, Response<List<Repo>> response) {
+//                Log.d(TAG, "onResponse");
+//                List<Repo> repoList = response.body();
+//                for (Repo repo : repoList)
+//                    Log.d(TAG, repo.toString());
+//            }
+//
+//            @Override
+//            public void onFailure(Call<List<Repo>> call, Throwable t) {
+//                Log.d(TAG, "onFailure");
+//            }
+//        });
+
+
+
+
+//***************************************************
+		SEND POST
+
+ Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://a-server.herokuapp.com/api/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        RegisterService registerService = retrofit.create(RegisterService.class);
+
+        RegisterRequestBody registerRequestBody = new RegisterRequestBody(
+                123123,
+                "lehuyduc",
+                "myEmail",
+                "123asdoia",
+                "10",
+                "8",
+                "1998",
+                "0123456789");
+
+        RequestBody requestBody = RequestBody.create(MediaType.parse("application/json"),
+                (new Gson().toJson(registerRequestBody)));
+
+        Call<RegisterResponseBody> register =
+                registerService.register(requestBody);
+
+        register.enqueue(new Callback<RegisterResponseBody>() {
+            @Override
+            public void onResponse(Call<RegisterResponseBody> call, Response<RegisterResponseBody> response) {
+                Log.d(TAG, "onResponse");
+                RegisterResponseBody body = response.body();
+                Log.d(TAG, body.toString());
+
+            }
+
+            @Override
+            public void onFailure(Call<RegisterResponseBody> call, Throwable t) {
+                Log.d(TAG, "onFailure");
+            }
+        });
