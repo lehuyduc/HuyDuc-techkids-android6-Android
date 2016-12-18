@@ -8,10 +8,13 @@ public interface GithubService {
     Call<List<Repo>> listRepos(@Path("user") String userName);
 }
 
+// For example, if link is https://square.github.io/api/myapi,
+then baseUrl = https://square.github.io/api/
+     ser
 -
 public interface RegisterService {
     @POST("register")
-    Call<RegisterResponseBody> register(@Body RegisterRequestBody body);
+    Call<RegisterResponseBody> register(@Body RequestBody body);
 }
 
 
